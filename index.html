@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Share Price Analyzer </title>
+</head>
+<body align ='center'>
+    <h1 id="title" class="animate__animated animate__zoomIn animate__delay-1s">Share Price Analyzer </h1>
+    <div id="show" class="animate__animated animate__slideInDown animate__delay-0.8s">
+    <label for="stockPrice">Enter the Stock Price for When you Brought the Stock:</label>
+    <br>
+    <br>
+    <input type="number" name="price" id="price">
+    <br>
+    <br>
+    <label for="stockPrice">Enter the Quantity of Shares Brought:</label>
+    <br>
+    <br>
+    <input type="number" name="quantity" id="quantity">
+    <br>
+    <br>
+    <label for="stockPrice">Enter Today's stock price for the Stock:</label>
+    <br>
+    <br>
+    <input type="number" name="currentPrice" id="currentPrice">
+    <br>
+    <br>
+    <button id = 'analyserStock' type="submit">Analyse Stock</button>
+    <p id="error"></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="result">
+    <h1 id="title2" class="animate__bounceIn"></h1>
+    <p id="stockPrice"></p>
+    <p id="stockInput"></p>
+    <p id="quanityInput"></p>
+    <p id="todaysInput"></p>
+    <p id="absoluteValueInput"></p>
+    <p id="percentValueInput"></p>
+    <p id="comment"></p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
